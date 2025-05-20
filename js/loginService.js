@@ -23,7 +23,7 @@ function login(email, password) {
             alertType ='success'
             message ='inicio exitoso'
             alertBuilder(alertType,message)
-            localStorage.setItem('token',"hola")
+            localStorage.setItem('token',"user1")
             setTimeout (()=>{
                 location.href='admin/dashboard.html'
             },2000)
@@ -51,3 +51,5 @@ function alertBuilder(alertType, message) {
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`
     document.getElementById('mensaje').innerHTML=alert;
 }
+
+  
